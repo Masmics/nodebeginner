@@ -1,7 +1,7 @@
-var http = require("http");
-2
-3 http.createServer(function(request, response) {
-4   response.writeHead(200, {"Content-Type": "text/plain"});
-5   response.write("Hello World");
-6   response.end();
-7 }).listen(8888);
+const http = require('http');
+
+http.createServer(function(request, response) {
+  response.writeHead(200, {"Content-Type": "text/plain"});
+  response.write("Hello World");
+  response.end();
+}).listen(8888);
