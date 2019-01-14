@@ -10,8 +10,10 @@
   "author": "Christina T. Herlocker",
   "license": "ISC",
   "dependencies": {
+    "formidable": "^1.2.1",
     "node": "^11.6.0",
     "nodemon": "^1.18.9",
+    "sys": "0.0.1",
     "webpack": "^4.28.3"
   },
   "devDependencies": {
