@@ -14,6 +14,7 @@
     "node": "^11.6.0",
     "nodemon": "^1.18.9",
     "sys": "0.0.1",
+    "util": "^0.11.1",
     "webpack": "^4.28.3"
   },
   "devDependencies": {
