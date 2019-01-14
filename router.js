@@ -1,12 +1,14 @@
 //**router decides which code to execute based on URL w/ GET & POST params**//
 
-function route(handle, pathname) {
+function route(handle, pathname, response) {
   console.log('About to route a request for ' + pathname);
   if(typeof handle[pathname] === 'function') {
-    return handle[pathname]();
+    return handle[pathname](response);
   } else {
     console.log('No request handler found for ' + pathname);
-    return '404 not found';
+    response.writeHead(404, { 'Content-Type': 'text-plain' });
+    response.write('404 not found');
+    response.end();
   }
 }
 exports.route = route;
