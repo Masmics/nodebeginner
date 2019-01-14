@@ -20,6 +20,7 @@ function start(response, postData) {
   response.end();
 }
 
+
 function upload(response, postData) {
   console.log('Request handler "upload" was called.');
   response.writeHead(200, { 'Content-Type': 'text/plain' });
